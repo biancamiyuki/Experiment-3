@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int ta[7], tb[7], tc[7], t;
+	
+	cout << "Enter all the temperature for Province A in a week: " << endl;
+	for (t=1;t<=7;t++)
+	{
+		cout << "Province A, Day " << t << ": "; cin >> ta[t];
+	}
+	
+	cout << "Enter all the temperature for Province B in a week: " << endl;
+	for (t=1;t<=7;t++)
+	{
+		cout <<  "Province B, Day " << t << ": "; cin >> tb[t];
+	}
+	
+	cout << "Enter all the temperature for Province C in a week: " << endl;
+	for (t=1;t<=7;t++)
+	{
+		cout <<  "Province C, Day " << t << ": "; cin >> tc[t];
+	}
+	
+	cout << endl;
+	cout << "The temperature for Province A, Province B, and Province C are:" << endl;
+	
+	for (t=1;t<=7;t++)
+	{
+		cout <<  "Province A, Day " << t << " = " << ta[t] << endl;
+	}
+	
+	for (t=1;t<=7;t++)
+	{
+		cout <<  "Province B, Day " << t << " = " << tb[t] << endl;
+	}
+	
+
+	for (t=1;t<=7;t++)
+	{
+		cout <<  "Province C, Day " << t << " = " << tc[t] << endl;
+	}
+	
+	
+	return 0;
+}
