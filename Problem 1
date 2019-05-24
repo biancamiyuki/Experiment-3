@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+int main ()
+{
+	int n[10], largest, smallest, x, max, min;
+	float ave, sum;
+	
+	cout << "Please enter 10 numbers: \n";
+	
+	for (x=0;x<10;x++)
+	n[x] = 0.0;
+	
+	for (x=0;x<10;x++)
+	cin >> n[x];
+	
+	for (x=0;x<10;x++)
+	sum = 0;
+	
+	for (x=0;x<10;x++)
+	sum = sum + n[x];
+	ave = sum / 10;
+	
+	max = 0;
+	for (x=1;x<10;x++)
+	if(n[max]<n[x])
+	max = x;
+	largest = n[max];
+	
+	min = 0;
+	for (x=1;x<10;x++)
+	if(n[min]>n[x])
+	min = x;
+	smallest = n[min];
+	
+	cout << "The largest is: " << largest << endl;
+	cout << "The smallest is: " << smallest << endl;
+	cout << "The total is: " << sum << endl;
+	cout << "The average is: " << ave << endl;
+	
+	return 0;
+	
+}
